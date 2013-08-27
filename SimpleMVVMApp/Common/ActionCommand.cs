@@ -1,4 +1,4 @@
-﻿namespace SimpleMVVMApp
+﻿namespace SimpleMVVMApp.Common
 {
     using System;
     using System.Diagnostics;

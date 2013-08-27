@@ -53,9 +53,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ActionCommand.cs" />
-    <Compile Include="Step2Data.cs" />
-    <Page Include="DataGridSampleView.xaml">
+    <Compile Include="Common\ActionCommand.cs" />
+    <Compile Include="Models\Step2Data.cs" />
+    <Page Include="Windows\DataGridSample\DataGridSampleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -63,10 +63,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataGridSampleView.xaml.cs">
+    <Compile Include="Windows\DataGridSample\DataGridSampleView.xaml.cs">
       <DependentUpon>DataGridSampleView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataGridSampleViewModel.cs" />
+    <Compile Include="Windows\DataGridSample\DataGridSampleViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

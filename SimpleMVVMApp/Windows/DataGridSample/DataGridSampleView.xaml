@@ -1,0 +1,21 @@
+﻿<Window x:Class="SimpleMVVMApp.Windows.DataGridSample.DataGridSampleView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:simpleMvvmApp="clr-namespace:SimpleMVVMApp"
+        xmlns:dataGridSample="clr-namespace:SimpleMVVMApp.Windows.DataGridSample"
+        mc:Ignorable="d"
+        Title="DataGridSampleView" Height="300" Width="300" 
+        d:DataContext="{d:DesignInstance dataGridSample:DataGridSampleViewModel}">
+    <StackPanel>
+        <Button Content="Add new item" Command="{Binding AddItemCommand}" />
+        <ListBox ItemsSource="{Binding Data}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding LayerName}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>

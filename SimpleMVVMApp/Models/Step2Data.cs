@@ -1,4 +1,4 @@
-﻿namespace SimpleMVVMApp
+﻿namespace SimpleMVVMApp.Models
 {
     public struct Step2Data
     {
